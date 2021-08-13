@@ -1,1 +1,90 @@
-hello everone
+
+E:\python_flask\flask_apps\another_dev\gitsample>git branch yyy
+
+E:\python_flask\flask_apps\another_dev\gitsample>git branch
+* main
+  yyy
+
+E:\python_flask\flask_apps\another_dev\gitsample>git checkout yyy
+Switched to branch 'yyy'
+
+E:\python_flask\flask_apps\another_dev\gitsample>git branch
+  main
+* yyy
+
+E:\python_flask\flask_apps\another_dev\gitsample>git checkout yyy
+Already on 'yyy'
+M       templates/sample.html
+
+E:\python_flask\flask_apps\another_dev\gitsample>git checkout yyy
+Already on 'yyy'
+M       config/sample1.py
+M       templates/sample.html
+
+E:\python_flask\flask_apps\another_dev\gitsample>git commit -m "YYY commit"
+On branch yyy
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   config/sample1.py
+        modified:   templates/sample.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\python_flask\flask_apps\another_dev\gitsample>git checkout yyy
+Already on 'yyy'
+M       config/sample1.py
+M       templates/sample.html
+
+E:\python_flask\flask_apps\another_dev\gitsample>git commit -m "YYY commit"
+On branch yyy
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   config/sample1.py
+        modified:   templates/sample.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\python_flask\flask_apps\another_dev\gitsample>git push
+fatal: The current branch yyy has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin yyy
+
+
+E:\python_flask\flask_apps\another_dev\gitsample>git push --set-upstream origin yyy
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'yyy' on GitHub by visiting:
+remote:      https://github.com/kshitijakale/gitsample/pull/new/yyy
+remote:
+To https://github.com/kshitijakale/gitsample.git
+ * [new branch]      yyy -> yyy
+Branch 'yyy' set up to track remote branch 'yyy' from 'origin'.
+
+E:\python_flask\flask_apps\another_dev\gitsample>git add -A
+
+E:\python_flask\flask_apps\another_dev\gitsample>git commit -m "YYY commit"
+[yyy 3217282] YYY commit
+ 2 files changed, 3 insertions(+)
+
+E:\python_flask\flask_apps\another_dev\gitsample>git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 519 bytes | 173.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kshitijakale/gitsample.git
+   d15f7b4..3217282  yyy -> yyy
+
+E:\python_flask\flask_apps\another_dev\gitsample>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+E:\python_flask\flask_apps\another_dev\gitsample>git branch -D yyy
+Deleted branch yyy (was 3217282).
+
+E:\python_flask\flask_apps\another_dev\gitsample>
